@@ -3,9 +3,169 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Pagina Inicial</title>
+    <style>
+        body{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        .Titulo {
+            margin: 2px;
+            padding: 5px;
+        }
+        .Titulo {
+            background-image: none;
+            background-position-y: 10%;
+            background-size: 100%;
+            height: 100px;
+            text-shadow: -2px 0 rgb(182, 21, 21), 0 2px rgb(14, 2, 2), 2px 0 white, 0 -2px white;
+        }
+        .Estructura {
+            display: flex;
+        }
+        .Menuestructurado {     
+            width: 25%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: aliceblue;
+        }
+        .menu div {
+            margin: 10px;
+            padding: 5px;
+        }
+        .principal_espaciado {
+            width: 75%;
+        }
+        .buscador {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .buscador input {
+            width: 60%;
+            background-color: rgb(241, 237, 237);
+            background-image: url(img/icon_search.png);
+            background-size: 4%;
+            background-repeat: no-repeat;
+            background-position: 99%;
+            height: 30px;
+        }
+        .contenido {    
+            width: 100%;
+        }
+        .contenidoFlex {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .principal_espaciado {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            place-items: center;
+        }
+        .menu div {   
+            font-weight: bold;
+            width: 80%;
+        }
+        .menu:hover {
+            color: blue;
+            font-weight: bolder;
+            padding: -1px;
+        }
+        .opcMenuSel {
+            text-decoration: underline;
+        }
+        .itemGrupo {
+            border: 5px outset grey;
+            text-align: center;
+            place-content: center;
+            height: 150px;
+            width: 150px;
+            margin: 10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding: 5px;
+        }
+        .itemGrupo .nombreGrupo {
+            font-weight: bolder;
+        }
+
+    </style>
 </head>
 <body>
-    
+    <div class="Titulo espaciado">
+        <h1>TodoGames</h1>
+    </div>
+    <div class="Estructura">
+        <div class="Menuestructurado">
+            <div class="OpcmenuCateg">Categoria</div>
+            <div class="OpcmenuTodo">Todos los juegos</div>
+            <div class="OpcmTerror">Terror</div>
+            <div class="OpcmSuspenso">Suspenso</div>
+            <div class="OpcmMundoAbierto">Mundo Abierto</div>
+            <div class="OpcmSupervivencia">Supervivencia</div>
+            <div class="OpcmAccion">Accion</div>
+            <div class="OpcmCarreras">Carreras</div>
+            <div class="OpcmDeportes">Deportes</div>
+            <div class="OpcmRol">Rol</div>
+
+            <div class="principal_espaciado">
+                <div class="buscador">
+                    <b>Buscar</b> &nbsp;                    
+                    <input type="text"/>
+                </div>
+
+                <div class="ItemGrupo">
+                    <div class="NombreGrupo">Suspenso</div>
+                    <img src="">
+                    <div>
+                        <a href="pagina3.html">[click aqui]</a>
+                    </div>
+                </div>
+                <div class="ItemGrupo">
+                    <div class="NombreGrupo">Mundo Abierto</div>
+                    <img src="">
+                    <div>
+                        <a href="pagina4.html">[click aqui]</a>
+                    </div>
+                </div>                <div class="ItemGrupo">
+                    <div class="NombreGrupo">Supervivencia</div>
+                    <img src="">
+                    <div>
+                        <a href="pagina2.html">[click aqui]</a>
+                    </div>
+                </div>                <div class="ItemGrupo">
+                    <div class="NombreGrupo">Accion</div>
+                    <img src="">
+                    <div>
+                        <a href="pagina2.html">[click aqui]</a>
+                    </div>
+                </div>                <div class="ItemGrupo">
+                    <div class="NombreGrupo">Carreras</div>
+                    <img src="">
+                    <div>
+                        <a href="pagina2.html">[click aqui]</a>
+                    </div>
+                </div>                <div class="ItemGrupo">
+                    <div class="NombreGrupo">Deportes</div>
+                    <img src="">
+                    <div>
+                        <a href="pagina2.html">[click aqui]</a>
+                    </div>
+                </div>                <div class="ItemGrupo">
+                    <div class="NombreGrupo">Rol</div>
+                    <img src="">
+                    <div>
+                        <a href="pagina2.html">[click aqui]</a>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
 </body>
+
 </html>
